@@ -36,7 +36,7 @@ npm start
 #### Development API
 
 ```bash
-nodemon --exec npm run server
+npm run server
 ```
 
 #### Production
