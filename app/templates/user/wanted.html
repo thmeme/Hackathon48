@@ -1,0 +1,103 @@
+
+	<div id="headerwrap">
+		<div class="container">
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 mt">
+				<h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
+					<p class="mt"><button type="button" class="btn btn-primary btn-lg">LEARN MORE</button></p>
+			</div>
+
+		</div><!-- /row -->
+		</div><!-- /container -->
+	</div> <!-- /headerwrap -->
+
+
+	<div class="container">
+
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>Qu'est ce que je propose ?</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row mt">
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img id="jardin" width="350" src="../img/jardin.jpg" alt="jardin" />
+					<div class="b-wrapper">
+						<button type="button" class="btn btn-primary btn-lg" ng-click='openJardin()'>MORE</button>
+					</div>
+				</a>
+			</div><!-- col-lg-4 -->
+
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img id="peinture" width="350" src="../img/peinture.jpg" alt="" />
+					<div class="b-wrapper">
+						<button type="button" class="btn btn-primary btn-lg" ng-click='openBricol()'>MORE</button>
+					</div>
+				</a>
+			</div><!-- col-lg-4 -->
+
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" ><img id="bricolage" width="350" src="../img/bricolage.jpg" alt="" />
+					<div class="b-wrapper">
+						<button type="button" class="btn btn-primary btn-lg" ng-click="openCuisine()">MORE</button>
+					</div>
+				</a>
+			</div><!-- col-lg-4 -->
+
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+<div class="container">
+
+<div class="blocAnnonce1" ng-hide='jardin'>
+  <div class='list' ng-repeat="(key, list) in models1.lists">
+    <ul class="ulannonce" dnd-list="list">
+      <div class="detailAnnonce" ng-repeat="annonce in list"
+        dnd-draggable="annonce"
+        dnd-moved="list.splice($index, 1)"
+        dnd-effect-allowed="move"
+        dnd-selected="models1.selected = annonce" ng-class="{'selected': models1.selected === annonce}"
+        style="min-height: 30px;">
+        <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
+        <h5>{{annonce.Auteur}}</h5>
+        <h3>{{annonce.Annonce}}</h3>
+        <p>{{annonce.content}}</p>
+      </div>
+  </div>
+</div>
+
+<div class="blocAnnonce2" ng-show='bricol'>
+  <div class='list' ng-repeat="(key, list) in models2.lists">
+    <ul class="ulannonce" dnd-list="list">
+      <div class="detailAnnonce" ng-repeat="annonce in list"
+        dnd-draggable="annonce"
+        dnd-moved="list.splice($index, 1)"
+        dnd-effect-allowed="move"
+        dnd-selected="models2.selected = annonce" ng-class="{'selected': models2.selected === annonce}"
+        style="min-height: 30px;">
+        <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
+        <h5>{{annonce.Auteur}}</h5>
+        <h3>{{annonce.Annonce}}</h3>
+        <p>{{annonce.content}}</p>
+      </div>
+  </div>
+</div>
+
+<div class="blocAnnonce3" ng-show='cuisine'>
+  <div class='list' ng-repeat="(key, list) in models3.lists">
+    <ul class="ulannonce" dnd-list="list">
+      <div class="detailAnnonce" ng-repeat="annonce in list"
+        dnd-draggable="annonce"
+        dnd-moved="list.splice($index, 1)"
+        dnd-effect-allowed="move"
+        dnd-selected="models3.selected = annonce" ng-class="{'selected': models3.selected === annonce}"
+        style="min-height: 30px;">
+        <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
+        <h5>{{annonce.Auteur}}</h5>
+        <h3>{{annonce.Annonce}}</h3>
+        <p>{{annonce.content}}</p>
+      </div>
+  </div>
+</div>

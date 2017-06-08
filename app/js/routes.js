@@ -72,6 +72,15 @@ angular.module('app')
                     }
                 }
             })
+            .state('user.wanted', {
+                url: '/wanted',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/wanted.html',
+                        controller: 'WantedController'
+                    }
+                }
+            })
             .state('user.profile', {
                 url: '/profile',
                 views: {
