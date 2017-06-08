@@ -1,29 +1,52 @@
-<img class="logo" src="img/logo3.png" alt="">
-<h1 class="">Pas de bras, pas de chocolat</h1>
 <div class="container">
 
-	<ul dnd-list="list.people"
-    dnd-allowed-types="list.allowedTypes"
-    dnd-disable-if="list.people.length >= list.max">
 
-    <li ng-repeat="person in list.people"
-        dnd-draggable="person"
-        dnd-type="person.type"
-        dnd-disable-if="person.type == 'unknown'"
-        dnd-moved="list.people.splice($index, 1)"
-        class="background-{{person.type}}"
-        >
-        <dnd-nodrag>
-          <div dnd-handle class="handle">:::</div>
-          <div class="name">
-              <input type="text" ng-model="person.name" class="background-{{person.type}} form-control input-sm">
-          </div>
-        </dnd-nodrag>
-    </li>
+  <div class='list' ng-repeat="(key, list) in models1.lists">
+    <ul dnd-list="list">
+      <div ng-repeat="annonce in list"
+      dnd-draggable="annonce"
+      dnd-moved="list.splice($index, 1)"
+      dnd-effect-allowed="move"
+      dnd-selected="models1.selected = annonce" ng-class="{'selected': models1.selected === annonce}"
+      style="min-height: 30px;">
+        <p>{{annonce.Auteur}}</p>
+      <img class='img-rounded img-responsive' src='../img/{{annonce.photo}}' alt="">
 
-    <li class="dndPlaceholder">
-        Drop any <strong>{{list.allowedTypes.join(' or ')}}</strong> here
-    </li>
+        <p>{{annonce.Annonce}}</p>
+        <p>{{annonce.content}}</p>
+      </div>
+  </div>
 
-</ul>
-</div>
+  <div class='list' ng-repeat="(key, list) in models2.lists">
+    <ul dnd-list="list">
+      <div ng-repeat="annonce in list"
+      dnd-draggable="annonce"
+      dnd-moved="list.splice($index, 1)"
+      dnd-effect-allowed="move"
+      dnd-selected="models2.selected = annonce" ng-class="{'selected': models2.selected === annonce}"
+      style="min-height: 30px;">
+        <p>{{annonce.Auteur}}</p>
+      <img class='img-circle img-raised img-responsive' src='../img/{{annonce.photo}}' alt="">
+
+        <p>{{annonce.Auteur}}</p>
+        <p>{{annonce.Annonce}}</p>
+        <p>{{annonce.content}}</p>
+      </div>
+  </div>
+
+  <div class='list' ng-repeat="(key, list) in models3.lists">
+    <ul dnd-list="list">
+      <div ng-repeat="annonce in list"
+      dnd-draggable="annonce"
+      dnd-moved="list.splice($index, 1)"
+      dnd-effect-allowed="move"
+      dnd-selected="models3.selected = annonce" ng-class="{'selected': models3.selected === annonce}"
+      style="min-height: 30px;">
+        <p>{{annonce.Auteur}}</p>
+      <img class='img-circle img-raised img-responsive' src='../img/{{annonce.photo}}' alt="">
+
+        <p>{{annonce.Auteur}}</p>
+        <p>{{annonce.Annonce}}</p>
+        <p>{{annonce.content}}</p>
+      </div>
+  </div>

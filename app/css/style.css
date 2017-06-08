@@ -36,6 +36,14 @@ p {
     margin-bottom: 25px;
 }
 
+
+.list {
+  width: 50%;
+  border: solid;
+  border-width: 1px;
+  display: inline-block;
+  vertical-align: top;
+  
 .centered {
     text-align: center;
 }
@@ -674,5 +682,6 @@ p.capitalize:first-letter {
 #cta03 {
 	background: #2d2d2d;
 	}
+
 
 }
