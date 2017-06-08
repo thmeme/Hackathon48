@@ -649,9 +649,6 @@ p.capitalize:first-letter {
 }
 
 
-
-
-
 @media (max-width: 600px) {
 
 #headerwrap h1 {
@@ -675,4 +672,34 @@ p.capitalize:first-letter {
 	background: #2d2d2d;
 	}
 
+}
+
+/*list annonce*/
+.list {
+  border: solid;
+  border-width: 1px;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  padding-left: 5px;
+  margin: 2%;
+}
+.ulannonce {
+  padding: 0;
+}
+
+.imgannonce {
+  max-height: 60px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.detailAnnonce {
+  background-color: white;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.blocAnnonce {
+  marg
 }
