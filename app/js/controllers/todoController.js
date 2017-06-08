@@ -8,7 +8,7 @@ angular.module('app')
       lists: {
         A: [{
             Auteur: 'Brigitte',
-            photo: '',
+            photo: '../img/brigitte.jpg',
             Annonce: "Un peu de peinture",
             categorie: 'Bricolage',
             content: 'J\'ai besoin d\'un coup de main pour repeindre une porte.',
@@ -39,7 +39,7 @@ angular.module('app')
             Contrepartie: 'Une sortie à la patinoire',
           },
           {
-            Auteur: 'Sandrine',
+            Auteur: 'cendrine',
             photo: '',
             Annonce: "Au courant",
             categorie: 'Bricolage',
@@ -54,7 +54,7 @@ angular.module('app')
       selected: null,
       lists: {
         A: [{
-            Auteur: 'Pierre',
+            Auteur: 'victor',
             photo: '',
             Annonce: "Pour apprendre",
             categorie: 'Cuisine',
@@ -97,7 +97,6 @@ angular.module('app')
         B: [{}]
       }
     };
-
     $scope.models3 = {
       selected: null,
       lists: {
@@ -118,7 +117,7 @@ angular.module('app')
             Contrepartie: 'Un pique-nique',
           },
           {
-            Auteur: 'Patrick',
+            Auteur: 'Sully',
             photo: '',
             Annonce: "Créativité",
             categorie: 'Jardinnage',
@@ -145,12 +144,5 @@ angular.module('app')
         B: [{}]
       }
     };
-
-
-
-
-
-
-
 
   });
