@@ -1,4 +1,9 @@
 angular.module('app')
     .controller('MainController', function($scope) {
-      /* Here is your main controller */
+      $scope.connexion = true;
+      $scope.signIn = function(){
+        $scope.connexion = false;
+      };
     });
+
+    
