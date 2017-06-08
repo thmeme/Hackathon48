@@ -55,7 +55,7 @@
   <div class='list' ng-repeat="(key, list) in models4.lists">
     <ul class="ulannonce" dnd-list="list">
       <div class="detailAnnonce" ng-repeat="volontaire in list"
-        dnd-draggable="Competence"
+        dnd-draggable="volontaire"
         dnd-moved="list.splice($index, 1)"
         dnd-effect-allowed="move"
         dnd-selected="models4.selected = annonce" ng-class="{'selected': models4.selected === annonce}"
@@ -66,4 +66,5 @@
         <p>{{volontaire.Commentaire}}</p>
       </div>
   </div>
+</div>
 </div>
