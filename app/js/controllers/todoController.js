@@ -8,7 +8,7 @@ angular.module('app')
       lists: {
         A: [{
             Auteur: 'Brigitte',
-            photo: '../img/brigitte.jpg',
+            photo: 'brigitte.jpg',
             Annonce: "Un peu de peinture",
             categorie: 'Bricolage',
             content: 'J\'ai besoin d\'un coup de main pour repeindre une porte.',
@@ -16,7 +16,7 @@ angular.module('app')
           },
           {
             Auteur: 'Michel',
-            photo: '',
+            photo: 'michel.jpg',
             Annonce: "Un p'tit coup de marteau",
             categorie: 'Bricolage',
             content: 'Je suis trop petit pour accrocher un cadre.',
@@ -24,7 +24,7 @@ angular.module('app')
           },
           {
             Auteur: 'Annie',
-            photo: '',
+            photo: 'annie.jpg',
             Annonce: "Besoin de gros bras",
             categorie: 'Bricolage',
             content: 'Je dois descendre une armoire dans la cave',
@@ -32,7 +32,7 @@ angular.module('app')
           },
           {
             Auteur: 'Sabrina',
-            photo: '',
+            photo: 'sabrina.jpg',
             Annonce: "Des p'tits trous !",
             categorie: 'Bricolage',
             content: 'Je voudrais percer le carrelage de ma salle de bain. J\'ai besoin de conseils.',
@@ -40,7 +40,7 @@ angular.module('app')
           },
           {
             Auteur: 'cendrine',
-            photo: '',
+            photo: 'cendrine.jpg',
             Annonce: "Au courant",
             categorie: 'Bricolage',
             content: 'Je dois ajouter une prise dans un mur. Help me !',
@@ -55,7 +55,7 @@ angular.module('app')
       lists: {
         A: [{
             Auteur: 'victor',
-            photo: '',
+            photo: 'victor.jpg',
             Annonce: "Pour apprendre",
             categorie: 'Cuisine',
             content: 'Je voudrais apprendre à faire un couscous.',
@@ -63,7 +63,7 @@ angular.module('app')
           },
           {
             Auteur: 'Thomas',
-            photo: '',
+            photo: 'thomas.jpg',
             Annonce: "Je recrute !",
             categorie: 'Cuisine',
             content: 'Je dois organiser un dîner pour trente personnes. Je cherche des volontaires pour un coup de main.',
@@ -71,7 +71,7 @@ angular.module('app')
           },
           {
             Auteur: 'Caroline',
-            photo: '',
+            photo: 'caroline.jpg',
             Annonce: "Pâtes",
             categorie: 'Cuisine',
             content: 'Je cherche des recettes origionales pour cuisiner les pâtes. Je préfère les travaux manuels pour apprendre.',
@@ -79,7 +79,7 @@ angular.module('app')
           },
           {
             Auteur: 'Manu',
-            photo: '',
+            photo: 'manu.jpg',
             Annonce: "Saussices",
             categorie: 'Cuisine',
             content: 'J\'aimerais apprendre à cuisiner les saussices de montagne. Un volontaire ?',
@@ -87,7 +87,7 @@ angular.module('app')
           },
           {
             Auteur: 'Valentine',
-            photo: '',
+            photo: 'valentine.jpg',
             Annonce: "friteuse",
             categorie: 'Cuisine',
             content: 'J\'ai besoin d\'une friteuse pour le 15 juin.',
@@ -102,7 +102,7 @@ angular.module('app')
       lists: {
         A: [{
             Auteur: 'Emma',
-            photo: '',
+            photo: 'emma.jpg',
             Annonce: "Aidez mes rosiers !",
             categorie: 'Jardinnage',
             content: 'Il faudrait tailler mes rosiers mais je ne sais pas comment faire.',
@@ -110,7 +110,7 @@ angular.module('app')
           },
           {
             Auteur: 'Margot',
-            photo: '',
+            photo: 'margot.jpg',
             Annonce: "Pelouse",
             categorie: 'Jardinnage',
             content: 'Je n\'ai pas le temps de tondre ma pelouse. J\'ai besoin d\'aide.',
@@ -118,7 +118,7 @@ angular.module('app')
           },
           {
             Auteur: 'Sully',
-            photo: '',
+            photo: 'sully.jpg',
             Annonce: "Créativité",
             categorie: 'Jardinnage',
             content: 'Je cherche de bonnes idées pour planter des fleurs dans le jardin.',
@@ -126,7 +126,7 @@ angular.module('app')
           },
           {
             Auteur: 'Sarah',
-            photo: '',
+            photo: 'sarah.jpg',
             Annonce: "La main verte",
             categorie: 'Jardinnage',
             content: 'Je suis à la recherche de bonnes idées pour décorer mon balcon. Soyez créatif !',
@@ -134,7 +134,7 @@ angular.module('app')
           },
           {
             Auteur: 'Jade',
-            photo: '',
+            photo: 'jade.jpg',
             Annonce: "plantes aromatiques",
             categorie: 'Jardinnage',
             content: 'Persil, basilic, etc. comment faire pousser tout ça en apartement.',
