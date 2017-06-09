@@ -27,7 +27,7 @@
         <div class="col-lg-4 col-md-4 col-xs-12 desc">
             <a class="b-link-fade b-animate-go"><img id="jardin" width="350" src="../img/jardin.jpg" alt="jardin" />
                 <div class="b-wrapper">
-                    <a><button type="button" class="btn btn-primary btn-lg service_button" ng-click='openJardin()'>mon service</button></a>
+                    <a ui-sref="user.todo({'#': 'annonces'})"><button type="button" class="btn btn-primary btn-lg service_button" ng-click='openJardin()'>mon service</button></a>
                 </div>
             </a>
         </div>
@@ -43,7 +43,7 @@
         <!-- col-lg-4 -->
 
         <div class="col-lg-4 col-md-4 col-xs-12 desc">
-            <a class="b-link-fade b-animate-go"><img id="bricolage" width="350" src="../img/bricolage.jpg" alt="" />
+            <a class="b-link-fade b-animate-go"><img id="bricolage" width="350" src="../img/cuisine.jpg" alt="" />
                 <div class="b-wrapper">
                     <button type="button" class="btn btn-primary btn-lg service_button" ng-click="openCuisine()">Mon service</button>
                 </div>
@@ -57,7 +57,7 @@
 <!-- /container -->
 
 <!--bloc annonces-->
-<div class="container" ng-class="top">
+<div id="annonces" class="container" ng-class="top">
     <div class="blocAnnonce1" ng-hide='jardin'>
         <div class='list' ng-repeat="(key, list) in models1.lists">
             <ul class="ulannonce" dnd-list="list">
