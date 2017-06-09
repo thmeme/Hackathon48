@@ -1,53 +1,58 @@
+<div id="todo_page">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-8 col-lg-offset-2 mt">
+                <h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
+            </div>
 
-	<div id="headerwrap">
-		<div class="container">
-		<div class="row centered">
-			<div class="col-lg-8 col-lg-offset-2 mt">
-				<h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
-					<p class="mt"><button type="button" class="btn btn-primary btn-lg">LEARN MORE</button></p>
-			</div>
-
-		</div><!-- /row -->
-		</div><!-- /container -->
-	</div> <!-- /headerwrap -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /headerwrap -->
 
 
-	<div class="container">
+<div class="container">
 
-		<div class="row mt centered ">
-			<div class="col-lg-4 col-lg-offset-4">
-				<h3>Qu'est ce que je propose ?</h3>
-				<hr>
-			</div>
-		</div><!-- /row -->
+    <div id="service_title" class="row mt centered ">
+        <div class="col-lg-4 col-lg-offset-4">
+            <h3>Le service que je propose</h3>
+            <hr>
+        </div>
+    </div>
+    <!-- /row -->
 
-		<div class="row mt">
-			<div class="col-lg-4 col-md-4 col-xs-12 desc">
-				<a class="b-link-fade b-animate-go"><img id="jardin" width="350" src="../img/jardin.jpg" alt="jardin" />
-					<div class="b-wrapper">
-						<button type="button" class="btn btn-primary btn-lg" ng-click='openJardin()'>MORE</button>
-					</div>
-				</a>
-			</div><!-- col-lg-4 -->
+    <div id="scrollArea" class="row mt">
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go"><img id="jardin" width="350" src="../img/jardin.jpg" alt="jardin" />
+                <div class="b-wrapper">
+                    <a ui-sref="user.todo({'#': 'annonces'})"><button type="button" class="btn btn-primary btn-lg service_button" ng-click='openJardin()'>mon service</button></a>
+                </div>
+            </a>
+        </div>
+        <!-- col-lg-4 -->
 
-			<div class="col-lg-4 col-md-4 col-xs-12 desc">
-				<a class="b-link-fade b-animate-go"><img id="peinture" width="350" src="../img/peinture.jpg" alt="" />
-					<div class="b-wrapper">
-						<button type="button" class="btn btn-primary btn-lg" ng-click='openBricol()'>MORE</button>
-					</div>
-				</a>
-			</div><!-- col-lg-4 -->
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go"><img id="peinture" width="350" src="../img/peinture.jpg" alt="" />
+                <div class="b-wrapper">
+                    <button type="button" class="btn btn-primary btn-lg service_button" ng-click='openBricol()'>Mon service</button>
+                </div>
+            </a>
+        </div>
+        <!-- col-lg-4 -->
 
-			<div class="col-lg-4 col-md-4 col-xs-12 desc">
-				<a class="b-link-fade b-animate-go" ><img id="bricolage" width="350" src="../img/bricolage.jpg" alt="" />
-					<div class="b-wrapper">
-						<button type="button" class="btn btn-primary btn-lg" ng-click="openCuisine()">MORE</button>
-					</div>
-				</a>
-			</div><!-- col-lg-4 -->
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go"><img id="bricolage" width="350" src="../img/cuisine.jpg" alt="" />
+                <div class="b-wrapper">
+                    <button type="button" class="btn btn-primary btn-lg service_button" ng-click="openCuisine()">Mon service</button>
+                </div>
+            </a>
+        </div>
+        <!-- col-lg-4 -->
 
-		</div><!-- /row -->
-	</div><!-- /container -->
+    </div>
+    <!-- /row -->
 
 <div class="container">
 
@@ -76,9 +81,9 @@
         <h3>{{annonce.Annonce}}</h3>
         <p>{{annonce.content}}</p>
       </div>
-  </div>
+     </div>
 </div>
-
+<!-- /container -->
 <div ng-show='bricol'>
   <div class='list' ng-repeat="(key, list) in models2.lists">
     <ul class="ulannonce" dnd-list="list">

@@ -343,7 +343,7 @@ p.capitalize:first-letter {
 #headerwrap h1 {
   font-family: 'Pacifico', cursive;
   padding-left: 10px;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 100px;
 	font-size: 38px;
 	font-weight: 900;
@@ -381,7 +381,7 @@ h4.sign {
 }
 
 #log {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 /* Footer Wrap */
 
@@ -434,6 +434,10 @@ h4.sign {
 	color: white;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+#exit i {
+  font-size: 30px !important;
 }
 
 #black i {
