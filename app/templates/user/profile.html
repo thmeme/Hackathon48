@@ -1,29 +1,44 @@
-<div id="headerwrap">
-  <div class="container">
-    <div class="row centered">
-      <div class="col-lg-8 col-lg-offset-2 mt">
-        <h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
-        <!-- <p class="mt"><button type="button" class="btn btn-primary btn-lg">LEARN MORE</button></p> -->
-      </div>
-    </div>
-    <!-- /row -->
-  </div>
-  <!-- /container -->
+
+<div id="todo_page">
+		<div class="container">
+				<div class="row centered">
+						<div class="col-lg-8 col-lg-offset-2 mt">
+								<h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
+						</div>
+
+				</div>
+				<!-- /row -->
+		</div>
+		<!-- /container -->
 </div>
 <!-- /headerwrap -->
 
 <div class="container">
+
+<div class="row profil_user">
+  <img class='img-rounded img-responsive imgannonce' src='../img/maxime.jpg' alt="">
+
+  <h3 class="myprofil">Mon profil</h3>
+</div>
+
+
   <div class="row">
 
-    <div class="col-md-6 titrecolonne">
 
-      <h2>J'ai besoin d'eux !</h2>
+    <div class="col-md-4 titrecolonne">
+      <h2 class="besoin">J'ai besoin d'eux !</h2>
     </div>
-    <div class="col-md-6 titrecolonne">
 
-      <h2>Ils sont là !</h2>
+    <div class="col-md-4 titrecolonne">
+      <img class="img_arrow" src="../img/button_arrows.png" >
+    </div>
+
+    <div class="col-md-4 titrecolonne">
+
+      <h2 class="here">Ils sont là !</h2>
     </div>
   </div>
+
     <div class='list' ng-repeat="(key, list) in models5.lists">
       <ul class="ulannonce" dnd-list="list">
         <div class="detailAnnonce" ng-repeat="annonce in list"
@@ -33,17 +48,34 @@
         dnd-selected="models5.selected = annonce" ng-class="{'selected': models5.selected === annonce}"
         style="min-height: 30px;">
           <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
-          <h5>{{annonce.Auteur}}</h5>
-          <h3>{{annonce.Competence}}</h3>
-          <p>{{annonce.Commentaire}}</p>
+          <h5 class="name">{{annonce.Auteur}}</h5>
+          <h3 class="help">{{annonce.Competence}}</h3>
+          <p class="helpme">{{annonce.Commentaire}}</p>
         </div>
     </div>
     <div class="row profileInvitOk">
 
-      <div class="col-md-6 titrecolonne">
+
+      <div class="row proposal">
+
+
+        <div class="col-md-4 titrecolonne">
+          <h2 class="service">J'ai offert un service !</h2>
+        </div>
+
+        <div class="col-md-4 titrecolonne">
+          <img class="img_arrow" src="../img/button_arrows.png" >
+        </div>
+
+        <div class="col-md-4 titrecolonne">
+
+          <h2 class="here">J'ai été retenu !</h2>
+        </div>
+      </div>
+      <!-- <div class="col-md-6 titrecolonne">
 
         <h2>J'ai été retenu !</h2>
-      </div>
+      </div> -->
       <div class="col-md-6 titrecolonne">
 
         <h2></h2>
@@ -59,9 +91,9 @@
         dnd-selected="models6.selected = annonce" ng-class="{'selected': models6.selected === annonce}"
         style="min-height: 30px;">
           <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
-          <h5>{{annonce.Auteur}}</h5>
-          <h3>{{annonce.Competence}}</h3>
-          <p>{{annonce.Commentaire}}</p>
+          <h5 class="name">{{annonce.Auteur}}</h5>
+          <h3 class="help">{{annonce.Competence}}</h3>
+          <p class="helpme">{{annonce.Commentaire}}</p>
         </div>
     </div>
 
