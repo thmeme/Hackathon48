@@ -1,42 +1,77 @@
+<div id="todo_page">
+		<div class="container">
+				<div class="row centered">
+						<div class="col-lg-8 col-lg-offset-2 mt">
+								<h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
+						</div>
 
-	<div class="container">
-		<div class="row mt centered ">
-			<div class="col-lg-4 col-lg-offset-4">
-				<h3>Qu'est ce que je propose ?</h3>
-				<hr>
-			</div>
-		</div><!-- /row -->
-
-		<div class="row mt">
-			<div class="col-lg-4 col-md-4 col-xs-12 desc">
-				<a class="b-link-fade b-animate-go"><img id="jardin" width="350" src="../img/jardin.jpg" alt="jardin" />
-					<div class="b-wrapper">
-						<button type="button" class="btn btn-primary btn-lg" ng-click='openJardin()'>MORE</button>
-					</div>
-				</a>
-			</div><!-- col-lg-4 -->
-
-			<div class="col-lg-4 col-md-4 col-xs-12 desc">
-				<a class="b-link-fade b-animate-go"><img id="peinture" width="350" src="../img/peinture.jpg" alt="" />
-					<div class="b-wrapper">
-						<button type="button" class="btn btn-primary btn-lg" ng-click='openBricol()'>MORE</button>
-					</div>
-				</a>
-			</div><!-- col-lg-4 -->
-
-			<div class="col-lg-4 col-md-4 col-xs-12 desc">
-				<a class="b-link-fade b-animate-go" ><img id="bricolage" width="350" src="../img/bricolage.jpg" alt="" />
-					<div class="b-wrapper">
-						<button type="button" class="btn btn-primary btn-lg" ng-click="openCuisine()">MORE</button>
-					</div>
-				</a>
-			</div><!-- col-lg-4 -->
-
-		</div><!-- /row -->
-	</div><!-- /container -->
+				</div>
+				<!-- /row -->
+		</div>
+		<!-- /container -->
+</div>
+<!-- /headerwrap -->
 
 <div class="container">
 
+    <div id="service_title" class="row mt centered ">
+        <div class="col-lg-4 col-lg-offset-4">
+            <h3>J'ai besoin d'eux</h3>
+            <hr>
+        </div>
+    </div>
+    <!-- /row -->
+
+    <div id="scrollArea" class="row mt">
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go"><img id="jardin" width="350" src="../img/jardin.jpg" alt="jardin" />
+                <div class="b-wrapper">
+                    <a ui-sref="user.todo({'#': 'annonces'})"><button type="button" class="btn btn-primary btn-lg service_button" ng-click='openJardin()'>Les volontaires</button></a>
+                </div>
+            </a>
+        </div>
+        <!-- col-lg-4 -->
+
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go"><img id="peinture" width="350" src="../img/peinture.jpg" alt="" />
+                <div class="b-wrapper">
+                    <button type="button" class="btn btn-primary btn-lg service_button" ng-click='openBricol()'>Les volontaires</button>
+                </div>
+            </a>
+        </div>
+        <!-- col-lg-4 -->
+
+        <div class="col-lg-4 col-md-4 col-xs-12 desc">
+            <a class="b-link-fade b-animate-go"><img id="bricolage" width="350" src="../img/cuisine.jpg" alt="" />
+                <div class="b-wrapper">
+                    <button type="button" class="btn btn-primary btn-lg service_button" ng-click="openCuisine()">les volontaires</button>
+                </div>
+            </a>
+        </div>
+        <!-- col-lg-4 -->
+
+    </div>
+    <!-- /row -->
+
+
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-4 titrecolonne">
+			<h2 id="annonces" class="volontaires">Les volontaires</h2>
+		</div>
+
+		<div class="col-md-4 titrecolonne">
+			<img class="img_wanted" src="../img/button_arrows.png" >
+		</div>
+
+		<div class="col-md-4 titrecolonne">
+
+			<h2 class="maliste">Ta liste</h2>
+		</div>
+	</div>
 
 <div class="blocAnnonce2" ng-show='bricol'>
   <div class='list' ng-repeat="(key, list) in models4.lists">
@@ -48,10 +83,16 @@
         dnd-selected="models4.selected = annonce" ng-class="{'selected': models4.selected === annonce}"
         style="min-height: 30px;">
         <img class='img-rounded img-responsive imgannonce' src='../img/{{volontaire.photo}}' alt="">
-        <h5>{{volontaire.Auteur}}</h5>
-        <h3>{{volontaire.Competence}}</h3>
-        <p>{{volontaire.Commentaire}}</p>
+        <h5 class="name">{{volontaire.Auteur}}</h5>
+        <h3 class="help">{{volontaire.Competence}}</h3>
+        <p class="helpme">{{volontaire.Commentaire}}</p>
       </div>
   </div>
 </div>
+</div>
+
+<div class="row centered valider">
+		<div class="col-lg-8 col-lg-offset-2 mt">
+				<p class="mt"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Je valide</button></p>
+		</div>
 </div>

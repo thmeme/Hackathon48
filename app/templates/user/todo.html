@@ -56,14 +56,21 @@
 
     <div class="container">
 
-        <div class="row">
-            <div class="col-md-6 titrecolonne">
-                <h2 id="annonces" class="details_offres">Ils ont besoin de toi !</h2>
-            </div>
-            <div class="col-md-6 titrecolonne">
-                <h2 class="mes_offres">Ta liste</h2>
-            </div>
-        </div>
+			<div class="row todo_choix">
+
+		    <div class="col-md-4 titrecolonne">
+		      <h2 id="annonces" class="toi">Ils ont besoin de toi !</h2>
+		    </div>
+
+		    <div class="col-md-4 titrecolonne">
+		      <img class="img_arrow" src="../img/button_arrows.png" >
+		    </div>
+
+		    <div class="col-md-4 titrecolonne">
+
+		      <h2 class="taliste">Ta liste</h2>
+		    </div>
+		  </div>
 
         <div ng-hide='jardin'>
 
@@ -102,3 +109,9 @@
             </div>
         </div>
     </div>
+
+		<div class="row centered valider">
+				<div class="col-lg-8 col-lg-offset-2 mt">
+						<p class="mt"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Je valide</button></p>
+				</div>
+		</div>

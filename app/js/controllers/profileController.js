@@ -36,20 +36,23 @@ angular.module('app')
         selected: null,
         lists: {
           A: [{
+            Auteur: 'Maxime',
+            photo: 'maxime.jpg',
+            Competence: "Cuisine",
+            categorie: 'Bricolage',
+            Commentaire: 'Maxime est le roi de la patate !',
+          }
+          
+
+          ],
+          B: [{
             Auteur: 'Margot',
             photo: 'margot.jpg',
             Competence: "Rata",
             categorie: 'Cuisine',
             Commentaire: 'J\'aimerais apprendre à faire le rata beauceron.',
             Contrepartie: 'Une soretie à la chasse',
-          },{
-              Auteur: 'Maxime',
-              photo: 'maxime.jpg',
-              Competence: "Cuisine",
-              categorie: 'Bricolage',
-              Commentaire: 'Maxime est le roi de la patate !',
-            },
-
+          }
           ],
         }
       };

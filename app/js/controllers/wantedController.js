@@ -35,7 +35,13 @@ angular.module('app')
             Commentaire: 'Une vraie force de la nature (Pierre - Nogent-le-Rotrou)',
           }
         ],
-        B: [{}]
+        B: [{
+          Auteur: 'Maxime',
+          photo: 'maxime.jpg',
+          Competence: "Il pleut",
+          Categorie: 'Bricolage',
+          Commentaire: 'Je voudrais changer une gouttière.',
+        }]
       }
     };
 
