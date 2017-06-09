@@ -63,6 +63,24 @@ angular.module('app')
                     }
                 }
             })
+            .state('user.todo', {
+                url: '/todo',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/todo.html',
+                        controller: 'TodoController'
+                    }
+                }
+            })
+            .state('user.wanted', {
+                url: '/wanted',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/wanted.html',
+                        controller: 'WantedController'
+                    }
+                }
+            })
             .state('user.profile', {
                 url: '/profile',
                 views: {
