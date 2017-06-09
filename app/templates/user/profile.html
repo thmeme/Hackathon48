@@ -1,1 +1,69 @@
-Profile de {{user.email}}
+<div id="headerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-8 col-lg-offset-2 mt">
+        <h1 class="animation slideDown">Pas de Bras, Pas de Chocolat</h1>
+        <!-- <p class="mt"><button type="button" class="btn btn-primary btn-lg">LEARN MORE</button></p> -->
+      </div>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /headerwrap -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6 titrecolonne">
+
+      <h2>J'ai besoin d'eux !</h2>
+    </div>
+    <div class="col-md-6 titrecolonne">
+
+      <h2>Ils sont là !</h2>
+    </div>
+  </div>
+    <div class='list' ng-repeat="(key, list) in models5.lists">
+      <ul class="ulannonce" dnd-list="list">
+        <div class="detailAnnonce" ng-repeat="annonce in list"
+        dnd-draggable="annonce"
+        dnd-moved="list.splice($index, 1)"
+        dnd-effect-allowed="move"
+        dnd-selected="models5.selected = annonce" ng-class="{'selected': models5.selected === annonce}"
+        style="min-height: 30px;">
+          <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
+          <h5>{{annonce.Auteur}}</h5>
+          <h3>{{annonce.Competence}}</h3>
+          <p>{{annonce.Commentaire}}</p>
+        </div>
+    </div>
+    <div class="row profileInvitOk">
+
+      <div class="col-md-6 titrecolonne">
+
+        <h2>J'ai été retenu !</h2>
+      </div>
+      <div class="col-md-6 titrecolonne">
+
+        <h2></h2>
+      </div>
+    </div>
+
+    <div class='list' ng-repeat="(key, list) in models6.lists">
+      <ul class="ulannonce" dnd-list="list">
+        <div class="detailAnnonce" ng-repeat="annonce in list"
+        dnd-draggable="annonce"
+        dnd-moved="list.splice($index, 1)"
+        dnd-effect-allowed="move"
+        dnd-selected="models6.selected = annonce" ng-class="{'selected': models6.selected === annonce}"
+        style="min-height: 30px;">
+          <img class='img-rounded img-responsive imgannonce' src='../img/{{annonce.photo}}' alt="">
+          <h5>{{annonce.Auteur}}</h5>
+          <h3>{{annonce.Competence}}</h3>
+          <p>{{annonce.Commentaire}}</p>
+        </div>
+    </div>
+
+
+</div>
