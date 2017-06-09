@@ -1,0 +1,50 @@
+#todo_page {
+  	background: url('../img/logobis.png') no-repeat center top;
+  	padding-top: 50px;
+    margin-top: -100px;
+  	background-attachment: relative;
+  	min-height: 450px;
+  	width: 100%;
+
+
+
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+  }
+
+  #todo_page h1 {
+    font-family: 'Pacifico', cursive;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 100px;
+  	font-size: 38px;
+  	font-weight: 900;
+  	letter-spacing: 1px;
+  	visibility: hidden;
+  }
+
+#exit i {
+  font-size: 30px !important;
+  margin-top: 0;
+}
+
+a#exit.signup {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+a#exit.home {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+#service_title {
+  margin-top: -160px;
+}
+
+.service_button {
+  margin-left: 90px;
+  margin-top: 30px;
+}
