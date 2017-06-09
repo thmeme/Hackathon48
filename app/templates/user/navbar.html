@@ -38,11 +38,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a id="exit" class="home" ui-sref="anon.home"><i class="material-icons">account_circle</i></a></li>
+                <li ui-sref-active="active"><a id="exit" class="home" ui-sref="user.profile"><i class="material-icons">account_circle</i></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <li ui-sref-active="active"><a id="exit" ui-sref="anon.register" class="signup" ng-hide="auth.isAuthenticated()"><i class="material-icons">exit_to_app</i></a></li>
+                    <li ui-sref-active="active"><a id="exit" ui-sref="anon.home" class="signup" ng-hide="auth.isAuthenticated()"><i class="material-icons">exit_to_app</i></a></li>
                     <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Dashboard</a></li>
                     <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Logout</a></li>
                 </li>
