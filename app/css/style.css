@@ -27,9 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-#jardin:hover {
-  background: #000;
+a.home, a.signin, a.signup {
+  color: #9c27b0 !important;
+  font-weight: 600 !important;
 }
+
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
@@ -182,6 +184,10 @@ hr-d {
 p.capitalize {
 	display:block;
 	text-align: left;
+  background-color: #9c27b0;
+  margin-right: 225px;
+  padding-top: 6px;
+  padding-left: 2px;
 }
 
 p.capitalize:first-letter {
@@ -194,7 +200,6 @@ p.capitalize:first-letter {
 	padding-right:10px;
 	margin-right:5px;
 }
-
 
 /* Button Call To Action */
 .btn-cta {
@@ -320,8 +325,8 @@ p.capitalize:first-letter {
 /* ================== MAIN WRAP SECTIONS ================== */
 
 #headerwrap {
-	background: url('../img/logo3.png') no-repeat center top;
-	margin-top: 0px;
+	background: url('../img/logobis.png') no-repeat center top;
+	margin-top: 100px;
 	padding-top: 50px;
 	background-attachment: relative;
 	min-height: 450px;
@@ -339,10 +344,16 @@ p.capitalize:first-letter {
   font-family: 'Pacifico', cursive;
   padding-left: 10px;
   margin-top: 0;
+  margin-bottom: 100px;
 	font-size: 38px;
 	font-weight: 900;
 	letter-spacing: 1px;
 	visibility: hidden;
+}
+
+#headerwrap h3 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #headerwrap h2 {
@@ -355,9 +366,23 @@ p.capitalize:first-letter {
 	margin: 0 auto;
 }
 
+h4.sign {
+  color: white !important;
+  margin-bottom: 0 !important;
+}
 
+.more {
+  margin: 15px 120px;
+}
 
+.fleche {
+  font-size: 40px;
+  color: black;
+}
 
+#log {
+  margin-top: 300px;
+}
 /* Footer Wrap */
 
 #f {

@@ -11,12 +11,12 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a ui-sref="anon.home"><img src="img/chocolate.svg" height="30%" width="30%"></a></li>
+                <li ui-sref-active="active"><a class="home" ui-sref="anon.home">HOME</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <li ui-sref-active="active"><a ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Login</a></li>
-                    <li ui-sref-active="active"><a ui-sref="anon.register" ng-hide="auth.isAuthenticated()">Register</a></li>
+                    <li ui-sref-active="active"><a ui-sref="anon.login" class="signin" ng-hide="auth.isAuthenticated()">About us</a></li>
+                    <li ui-sref-active="active"><a ui-sref="anon.register" class="signup" ng-hide="auth.isAuthenticated()">Des Questions ?</a></li>
                     <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Dashboard</a></li>
                     <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Logout</a></li>
                 </li>
