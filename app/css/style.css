@@ -703,3 +703,7 @@ p.capitalize:first-letter {
 .titrecolonne {
   text-align: center;
 }
+.profileInvitOk {
+  border-top: solid;
+  border-width: 2px;
+}
