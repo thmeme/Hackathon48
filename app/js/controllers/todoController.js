@@ -144,7 +144,7 @@ angular.module('app')
         B: [{}]
       }
     };
-    
+
     $scope.models4 = {
       selected: null,
       lists: {

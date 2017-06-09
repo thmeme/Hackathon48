@@ -50,7 +50,19 @@
 	</div><!-- /container -->
 
 <div class="container">
-<div class="blocAnnonce1" ng-hide='jardin'>
+
+	<div class="row titrecolonne">
+		<div class="col-md-6 titrecolonne">
+
+	<h2>Ils ont besoin de toi !</h2>
+</div>
+<div class="col-md-6 titrecolonne">
+
+	<h2>Ta liste</h2>
+</div>
+
+<div ng-hide='jardin'>
+
   <div class='list' ng-repeat="(key, list) in models1.lists">
     <ul class="ulannonce" dnd-list="list">
       <div class="detailAnnonce" ng-repeat="annonce in list"
@@ -67,7 +79,7 @@
   </div>
 </div>
 
-<div class="blocAnnonce2" ng-show='bricol'>
+<div ng-show='bricol'>
   <div class='list' ng-repeat="(key, list) in models2.lists">
     <ul class="ulannonce" dnd-list="list">
       <div class="detailAnnonce" ng-repeat="annonce in list"
@@ -84,7 +96,7 @@
   </div>
 </div>
 
-<div class="blocAnnonce3" ng-show='cuisine'>
+<div ng-show='cuisine'>
   <div class='list' ng-repeat="(key, list) in models3.lists">
     <ul class="ulannonce" dnd-list="list">
       <div class="detailAnnonce" ng-repeat="annonce in list"
